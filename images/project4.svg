@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff7ed"/>
+      <stop offset="100%" style="stop-color:#ffedd5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g4)"/>
+  <!-- Login card -->
+  <rect x="230" y="50" width="340" height="340" rx="20" fill="white" fill-opacity="0.9"
+        filter="drop-shadow(0 8px 24px rgba(0,0,0,.1))"/>
+  <!-- Lock icon circle -->
+  <circle cx="400" cy="130" r="38" fill="#ff6f00" fill-opacity="0.15"/>
+  <text x="400" y="144" font-family="serif" font-size="32" text-anchor="middle" fill="#ff6f00">🔒</text>
+  <text x="400" y="192" font-family="Poppins,sans-serif" font-size="20" font-weight="700"
+        fill="#1e293b" text-anchor="middle">Sign In</text>
+  <!-- Input fields -->
+  <rect x="266" y="210" width="268" height="38" rx="8" fill="#f1f5f9"/>
+  <rect x="266" y="258" width="268" height="38" rx="8" fill="#f1f5f9"/>
+  <!-- Button -->
+  <rect x="266" y="312" width="268" height="44" rx="22" fill="#ff6f00"/>
+  <text x="400" y="340" font-family="Poppins,sans-serif" font-size="15" font-weight="600"
+        fill="white" text-anchor="middle">Login with Firebase</text>
+  <text x="400" y="420" font-family="Poppins,sans-serif" font-size="18" font-weight="600"
+        fill="#ff6f00" fill-opacity="0.8" text-anchor="middle">Firebase Auth App</text>
+</svg>

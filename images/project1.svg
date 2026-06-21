@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe"/>
+      <stop offset="100%" style="stop-color:#bfdbfe"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g1)"/>
+  <rect x="60" y="40" width="680" height="370" rx="12" fill="white" fill-opacity="0.5"/>
+  <!-- Nav bar -->
+  <rect x="60" y="40" width="680" height="50" rx="12" fill="#2563eb"/>
+  <circle cx="100" cy="65" r="8" fill="white" fill-opacity="0.6"/>
+  <rect x="120" y="58" width="80" height="14" rx="7" fill="white" fill-opacity="0.5"/>
+  <rect x="500" y="55" width="50" height="14" rx="7" fill="white" fill-opacity="0.4"/>
+  <rect x="565" y="55" width="50" height="14" rx="7" fill="white" fill-opacity="0.4"/>
+  <rect x="630" y="55" width="50" height="14" rx="7" fill="white" fill-opacity="0.4"/>
+  <!-- Content blocks -->
+  <rect x="100" y="120" width="260" height="220" rx="10" fill="#2563eb" fill-opacity="0.12"/>
+  <rect x="390" y="120" width="310" height="30" rx="6" fill="#2563eb" fill-opacity="0.25"/>
+  <rect x="390" y="162" width="240" height="16" rx="6" fill="#64748b" fill-opacity="0.3"/>
+  <rect x="390" y="186" width="200" height="16" rx="6" fill="#64748b" fill-opacity="0.3"/>
+  <rect x="390" y="210" width="220" height="16" rx="6" fill="#64748b" fill-opacity="0.3"/>
+  <rect x="390" y="260" width="120" height="36" rx="18" fill="#2563eb" fill-opacity="0.7"/>
+  <rect x="525" y="260" width="120" height="36" rx="18" fill="transparent" stroke="#2563eb" stroke-width="2" fill-opacity="0"/>
+  <!-- Label -->
+  <text x="400" y="420" font-family="Poppins,sans-serif" font-size="18" font-weight="600"
+        fill="#2563eb" fill-opacity="0.6" text-anchor="middle">Personal Portfolio</text>
+</svg>

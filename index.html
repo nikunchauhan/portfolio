@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of Nikun Chauhan – CS Student &amp; Developer" />
+  <title>Nikun Chauhan | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uu0qcPxh4Plh7eqjFgR6HGsR6MjJMj9BbsruNw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="header" id="home">
+    <div class="header__brand">
+      <span class="header__name">Nikun Chauhan</span>
+      <span class="header__tagline">CS Student &amp; Developer · KIET Group of Institutions</span>
+    </div>
+
+    <!-- Hamburger checkbox hack for mobile nav (CSS-only) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a href="#home"     class="nav__link">Home</a></li>
+        <li><a href="#about"    class="nav__link">About</a></li>
+        <li><a href="#skills"   class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#resume"   class="nav__link">Resume</a></li>
+        <li><a href="#contact"  class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name">Nikun Chauhan</h1>
+          <p class="hero__role">
+            A passionate <span class="accent">CS Student &amp; Developer</span> building
+            web apps, ML models, and solving 180+ coding problems on LeetCode.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Hire Me</a>
+            <a href="resume.pdf" class="btn btn--outline" download>
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+              Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="hero__image-wrap" aria-hidden="true">
+          <div class="hero__blob"></div>
+          <img
+            src="images/profile.jpg"
+            alt="Nikun Chauhan – profile photo"
+            class="hero__img"
+          />
+        </div>
+      </div>
+      <!-- Decorative wave divider -->
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-light)" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 class="section__title" id="about-heading">About <span class="accent">Me</span></h2>
+        <p class="section__subtitle">Get to know me a little better</p>
+
+        <div class="about__grid">
+          <!-- Profile image -->
+          <div class="about__image-col">
+            <div class="about__img-wrap">
+              <img
+                src="images/profile.jpg"
+                alt="Nikun Chauhan smiling"
+                class="about__img"
+              />
+            </div>
+          </div>
+
+          <!-- About content -->
+          <div class="about__content-col">
+            <h3 class="about__name">Hi, I'm <span class="accent">Nikun Chauhan</span></h3>
+
+            <div class="about__info-grid">
+              <div class="about__info-item">
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                <div>
+                  <strong>Education</strong>
+                  <p>B.Tech – Computer Science<br />KIET Group of Institutions, 2024–2028<br />CGPA: 8.66 / 10.0</p>
+                </div>
+              </div>
+              <div class="about__info-item">
+                <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+                <div>
+                  <strong>Achievement</strong>
+                  <p>1st Place – BrainWave 2.0<br />MLH Track, DTU<br />AWS Certified (CLF-C02)</p>
+                </div>
+              </div>
+              <div class="about__info-item">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <div>
+                  <strong>Location</strong>
+                  <p>Ghaziabad, UP, India</p>
+                </div>
+              </div>
+              <div class="about__info-item">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:contact@nikundevs.io">contact@nikundevs.io</a></p>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="about__section-heading">Bio</h4>
+            <p class="about__bio">
+              I'm a Computer Science undergraduate at KIET Group of Institutions with a CGPA of 8.66.
+              I love building things for the web and enjoy competitive programming — having solved
+              180+ problems on LeetCode with a focus on optimised time complexity. I'm also exploring
+              Machine Learning and have hands-on experience with Python, Pandas, and Scikit-learn.
+            </p>
+
+            <h4 class="about__section-heading">Career Objective</h4>
+            <p class="about__bio">
+              To grow as a full-stack developer and ML practitioner in a collaborative environment
+              where I can contribute my skills, learn cutting-edge technologies, and build products
+              that make a meaningful impact — while maintaining a strong foundation in algorithms
+              and data structures.
+            </p>
+
+            <a href="#contact" class="btn btn--primary" style="margin-top:1.5rem;">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section__title" id="skills-heading">My <span class="accent">Skills</span></h2>
+        <p class="section__subtitle">Technologies &amp; tools I work with</p>
+
+        <div class="skills__grid">
+
+          <article class="skill-card" tabindex="0">
+            <div class="skill-card__icon" style="--icon-color:#3776ab;">
+              <i class="fa-brands fa-python" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-card__name">Python</h3>
+            <p class="skill-card__desc">Data analysis, ML models, scripting and automation.</p>
+            <div class="skill-card__bar" aria-label="Proficiency 85%">
+              <div class="skill-card__fill" style="--pct:85%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" tabindex="0">
+            <div class="skill-card__icon" style="--icon-color:#00599c;">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-card__name">C / C++</h3>
+            <p class="skill-card__desc">Data structures, algorithms, and competitive programming.</p>
+            <div class="skill-card__bar" aria-label="Proficiency 80%">
+              <div class="skill-card__fill" style="--pct:80%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" tabindex="0">
+            <div class="skill-card__icon" style="--icon-color:#f7df1e;">
+              <i class="fa-brands fa-js" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-card__name">JavaScript</h3>
+            <p class="skill-card__desc">ES6+, DOM manipulation, dynamic web interactions.</p>
+            <div class="skill-card__bar" aria-label="Proficiency 80%">
+              <div class="skill-card__fill" style="--pct:80%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" tabindex="0">
+            <div class="skill-card__icon" style="--icon-color:#e34f26;">
+              <i class="fa-brands fa-html5" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-card__name">HTML5 &amp; CSS3</h3>
+            <p class="skill-card__desc">Semantic markup, Flexbox, Grid, animations.</p>
+            <div class="skill-card__bar" aria-label="Proficiency 90%">
+              <div class="skill-card__fill" style="--pct:90%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" tabindex="0">
+            <div class="skill-card__icon" style="--icon-color:#61dafb;">
+              <i class="fa-brands fa-react" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-card__name">React</h3>
+            <p class="skill-card__desc">Component-based UI, hooks, and state management.</p>
+            <div class="skill-card__bar" aria-label="Proficiency 70%">
+              <div class="skill-card__fill" style="--pct:70%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" tabindex="0">
+            <div class="skill-card__icon" style="--icon-color:#339933;">
+              <i class="fa-brands fa-node-js" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-card__name">Node.js</h3>
+            <p class="skill-card__desc">Server-side JavaScript, REST APIs, Express.</p>
+            <div class="skill-card__bar" aria-label="Proficiency 65%">
+              <div class="skill-card__fill" style="--pct:65%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" tabindex="0">
+            <div class="skill-card__icon" style="--icon-color:#f05032;">
+              <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-card__name">Git &amp; GitHub</h3>
+            <p class="skill-card__desc">Version control, branching, 15+ public repositories.</p>
+            <div class="skill-card__bar" aria-label="Proficiency 85%">
+              <div class="skill-card__fill" style="--pct:85%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" tabindex="0">
+            <div class="skill-card__icon" style="--icon-color:#ff9900;">
+              <i class="fa-brands fa-aws" aria-hidden="true"></i>
+            </div>
+            <h3 class="skill-card__name">AWS Cloud</h3>
+            <p class="skill-card__desc">AWS Certified Cloud Practitioner (CLF-C02).</p>
+            <div class="skill-card__bar" aria-label="Proficiency 70%">
+              <div class="skill-card__fill" style="--pct:70%;"></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section__title" id="projects-heading">My <span class="accent">Projects</span></h2>
+        <p class="section__subtitle">Some things I've built</p>
+
+        <div class="projects__grid">
+
+          <!-- Project 1 – Uber Ride Prediction -->
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="images/project1.svg"
+                alt="Uber Ride Prediction Model screenshot"
+                class="project-card__img"
+              />
+              <div class="project-card__overlay" aria-hidden="true">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Uber Ride Prediction Model</h3>
+              <p class="project-card__desc">
+                Regression-based ML model to predict Uber ride cancellation using historical datasets.
+                Features analysed with Matplotlib; accuracy improved through feature engineering.
+              </p>
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Scikit-learn</li>
+                <li>Matplotlib</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/nikunchauhan" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/nikunchauhan" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 – Restaurant Web App -->
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="images/project2.svg"
+                alt="Restaurant Web Application screenshot"
+                class="project-card__img"
+              />
+              <div class="project-card__overlay" aria-hidden="true">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Restaurant Web Application</h3>
+              <p class="project-card__desc">
+                Interactive restaurant site with smooth scroll navigation and dynamic menu filtering.
+                Optimised DOM manipulation for faster FCP across low-bandwidth connections.
+              </p>
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/nikunchauhan" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/nikunchauhan" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 – LeetCode DSA Practice -->
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="images/project3.svg"
+                alt="LeetCode DSA solutions screenshot"
+                class="project-card__img"
+              />
+              <div class="project-card__overlay" aria-hidden="true">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">DSA Solutions (LeetCode)</h3>
+              <p class="project-card__desc">
+                180+ solved problems covering Arrays, Strings, and Greedy Algorithms,
+                all with a focus on optimised time and space complexity.
+              </p>
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li>C++</li>
+                <li>Python</li>
+                <li>Algorithms</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/nikunchauhan" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  View Solutions
+                </a>
+                <a href="https://github.com/nikunchauhan" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 – Personal Portfolio -->
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img
+                src="images/project4.svg"
+                alt="Personal Portfolio website screenshot"
+                class="project-card__img"
+              />
+              <div class="project-card__overlay" aria-hidden="true">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Personal Portfolio</h3>
+              <p class="project-card__desc">
+                This very portfolio — a fully responsive website built with pure HTML5 and CSS3,
+                featuring smooth animations, CSS variables, and zero JavaScript dependencies.
+              </p>
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/nikunchauhan" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESUME SECTION ========== -->
+    <section class="section resume" id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <h2 class="section__title" id="resume-heading">My <span class="accent">Resume</span></h2>
+        <p class="section__subtitle">Download my latest resume</p>
+
+        <div class="resume__card">
+          <div class="resume__icon" aria-hidden="true">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <div class="resume__info">
+            <h3 class="resume__title">Nikun Chauhan – Resume</h3>
+            <p class="resume__text">
+              My resume covers my education at KIET, technical skills, ML and web projects,
+              competitive programming achievements, and certifications.
+            </p>
+            <ul class="resume__highlights">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> B.Tech CS – KIET Group of Institutions · CGPA 8.66</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> AWS Certified Cloud Practitioner (CLF-C02)</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 1st Place – BrainWave 2.0 Hackathon (DTU)</li>
+            </ul>
+          </div>
+          <a href="resume.pdf" class="btn btn--primary resume__btn" download>
+            <i class="fa-solid fa-download" aria-hidden="true"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="section__title" id="contact-heading">Contact <span class="accent">Me</span></h2>
+        <p class="section__subtitle">Let's work together</p>
+
+        <div class="contact__grid">
+
+          <!-- Contact info cards -->
+          <div class="contact__info">
+
+            <div class="contact__info-card">
+              <div class="contact__info-icon" aria-hidden="true">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div>
+                <strong>Name</strong>
+                <p>Nikun Chauhan</p>
+              </div>
+            </div>
+
+            <div class="contact__info-card">
+              <div class="contact__info-icon" aria-hidden="true">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:contact@nikundevs.io">contact@nikundevs.io</a></p>
+              </div>
+            </div>
+
+            <div class="contact__info-card">
+              <div class="contact__info-icon" aria-hidden="true">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div>
+                <strong>LinkedIn</strong>
+                <p><a href="https://www.linkedin.com/in/nikun-chauhan-b5aa1a328/" target="_blank" rel="noopener noreferrer">nikun-chauhan</a></p>
+              </div>
+            </div>
+
+            <div class="contact__info-card">
+              <div class="contact__info-icon" aria-hidden="true">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <strong>Location</strong>
+                <p>Ghaziabad, UP, India</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact__form" action="#" method="post" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Your full name"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here…"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary contact__submit">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              Send Message
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <span class="footer__name">Nikun Chauhan</span>
+        <p class="footer__tagline">CS Student &amp; Developer · KIET, Ghaziabad</p>
+        <p class="footer__made">
+          Made with <span class="footer__heart" aria-label="love">&#10084;</span> by Nikun Chauhan
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__heading">Quick Links</h4>
+        <nav aria-label="Footer navigation">
+          <ul class="footer__nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__social">
+        <h4 class="footer__heading">Follow Me</h4>
+        <div class="social-icons" role="list">
+          <a href="https://github.com/nikunchauhan" class="social-icon" aria-label="GitHub profile" role="listitem" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nikun-chauhan-b5aa1a328/" class="social-icon" aria-label="LinkedIn profile" role="listitem" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/Nikunjee" class="social-icon" aria-label="Twitter / X profile" role="listitem" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="LeetCode profile" role="listitem" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Nikun Chauhan. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

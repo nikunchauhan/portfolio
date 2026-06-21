@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4"/>
+      <stop offset="100%" style="stop-color:#dcfce7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g2)"/>
+  <!-- Calculator body -->
+  <rect x="240" y="40" width="320" height="370" rx="20" fill="white" fill-opacity="0.7"/>
+  <rect x="260" y="60" width="280" height="80" rx="10" fill="#1e293b" fill-opacity="0.85"/>
+  <text x="525" y="115" font-family="monospace" font-size="36" font-weight="700"
+        fill="white" text-anchor="end">1,234</text>
+  <!-- Buttons grid -->
+  <rect x="264" y="158" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="334" y="158" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="404" y="158" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="474" y="158" width="60" height="44" rx="8" fill="#16a34a" fill-opacity="0.8"/>
+  <rect x="264" y="212" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="334" y="212" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="404" y="212" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="474" y="212" width="60" height="44" rx="8" fill="#2563eb" fill-opacity="0.8"/>
+  <rect x="264" y="266" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="334" y="266" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="404" y="266" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="474" y="266" width="60" height="44" rx="8" fill="#2563eb" fill-opacity="0.8"/>
+  <rect x="264" y="320" width="130" height="44" rx="8" fill="#64748b" fill-opacity="0.4"/>
+  <rect x="404" y="320" width="60" height="44" rx="8" fill="#e2e8f0"/>
+  <rect x="474" y="320" width="60" height="44" rx="8" fill="#2563eb"/>
+  <text x="400" y="420" font-family="Poppins,sans-serif" font-size="18" font-weight="600"
+        fill="#16a34a" fill-opacity="0.7" text-anchor="middle">Calculator App</text>
+</svg>
