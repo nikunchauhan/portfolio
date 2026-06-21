@@ -1,28 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
   <defs>
-    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a"/>
-      <stop offset="100%" style="stop-color:#1e3a5f"/>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="450" fill="url(#g3)"/>
-  <!-- Sun -->
-  <circle cx="400" cy="140" r="70" fill="#fbbf24" fill-opacity="0.9"/>
-  <!-- Rays -->
-  <line x1="400" y1="50" x2="400" y2="30" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
-  <line x1="490" y1="80" x2="506" y2="64" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
-  <line x1="520" y1="170" x2="542" y2="170" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
-  <line x1="490" y1="200" x2="506" y2="216" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
-  <line x1="310" y1="80" x2="294" y2="64" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
-  <line x1="280" y1="170" x2="258" y2="170" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
-  <!-- Cloud -->
-  <ellipse cx="550" cy="180" rx="90" ry="40" fill="white" fill-opacity="0.2"/>
-  <ellipse cx="510" cy="170" rx="60" ry="35" fill="white" fill-opacity="0.2"/>
-  <!-- Temp text -->
-  <text x="400" y="290" font-family="Poppins,sans-serif" font-size="60" font-weight="700"
-        fill="white" text-anchor="middle">24°C</text>
-  <text x="400" y="330" font-family="Poppins,sans-serif" font-size="20"
-        fill="rgba(255,255,255,0.6)" text-anchor="middle">New York, USA</text>
-  <text x="400" y="420" font-family="Poppins,sans-serif" font-size="18" font-weight="600"
-        fill="#fbbf24" fill-opacity="0.8" text-anchor="middle">Weather App</text>
+  <!-- Dark background -->
+  <rect width="800" height="450" fill="url(#bg3)"/>
+
+  <!-- LeetCode logo – big centered -->
+  <!-- Outer hexagon shape (simplified) -->
+  <polygon points="400,60 470,100 470,180 400,220 330,180 330,100"
+           fill="none" stroke="#f97316" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Inner L shape -->
+  <text x="400" y="170" font-family="Arial Black,sans-serif" font-size="80" font-weight="900"
+        fill="url(#orangeGrad)" text-anchor="middle" dominant-baseline="middle"
+        letter-spacing="-4">LC</text>
+
+  <!-- LeetCode wordmark -->
+  <text x="400" y="250" font-family="Arial,sans-serif" font-size="28" font-weight="700"
+        fill="#f97316" text-anchor="middle" letter-spacing="2">LeetCode</text>
+
+  <!-- Stats bar -->
+  <rect x="100" y="285" width="600" height="1" fill="#2d2d2d"/>
+
+  <!-- Solved / Total -->
+  <text x="400" y="315" font-family="monospace" font-size="20" font-weight="700"
+        fill="#e5e7eb" text-anchor="middle">Problems Solved: <tspan fill="#f97316">180+</tspan> / 3000+</text>
+
+  <!-- Category pills -->
+  <!-- Easy -->
+  <rect x="130" y="335" width="140" height="34" rx="17" fill="#16a34a" fill-opacity="0.2" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="200" y="357" font-family="monospace" font-size="13" font-weight="700" fill="#4ade80" text-anchor="middle">Easy  ✓ 72</text>
+
+  <!-- Medium -->
+  <rect x="330" y="335" width="140" height="34" rx="17" fill="#d97706" fill-opacity="0.2" stroke="#d97706" stroke-width="1.5"/>
+  <text x="400" y="357" font-family="monospace" font-size="13" font-weight="700" fill="#fbbf24" text-anchor="middle">Medium  ✓ 89</text>
+
+  <!-- Hard -->
+  <rect x="530" y="335" width="140" height="34" rx="17" fill="#dc2626" fill-opacity="0.2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="600" y="357" font-family="monospace" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">Hard  ✓ 19</text>
+
+  <!-- Topic tags row -->
+  <text x="400" y="405" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">
+    Arrays · Strings · Greedy · DP · Sliding Window · Binary Search
+  </text>
+
+  <!-- Acceptance rate -->
+  <text x="400" y="432" font-family="monospace" font-size="12" fill="#4b5563" text-anchor="middle">
+    Acceptance Rate: <tspan fill="#f97316" font-weight="700">68.4%</tspan>  ·  Streak: <tspan fill="#f97316" font-weight="700">42 days</tspan>
+  </text>
 </svg>

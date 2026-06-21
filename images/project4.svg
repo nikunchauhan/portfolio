@@ -1,26 +1,92 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
   <defs>
-    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fff7ed"/>
-      <stop offset="100%" style="stop-color:#ffedd5"/>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff"/>
+      <stop offset="100%" style="stop-color:#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="450" fill="url(#g4)"/>
-  <!-- Login card -->
-  <rect x="230" y="50" width="340" height="340" rx="20" fill="white" fill-opacity="0.9"
-        filter="drop-shadow(0 8px 24px rgba(0,0,0,.1))"/>
-  <!-- Lock icon circle -->
-  <circle cx="400" cy="130" r="38" fill="#ff6f00" fill-opacity="0.15"/>
-  <text x="400" y="144" font-family="serif" font-size="32" text-anchor="middle" fill="#ff6f00">🔒</text>
-  <text x="400" y="192" font-family="Poppins,sans-serif" font-size="20" font-weight="700"
-        fill="#1e293b" text-anchor="middle">Sign In</text>
-  <!-- Input fields -->
-  <rect x="266" y="210" width="268" height="38" rx="8" fill="#f1f5f9"/>
-  <rect x="266" y="258" width="268" height="38" rx="8" fill="#f1f5f9"/>
-  <!-- Button -->
-  <rect x="266" y="312" width="268" height="44" rx="22" fill="#ff6f00"/>
-  <text x="400" y="340" font-family="Poppins,sans-serif" font-size="15" font-weight="600"
-        fill="white" text-anchor="middle">Login with Firebase</text>
-  <text x="400" y="420" font-family="Poppins,sans-serif" font-size="18" font-weight="600"
-        fill="#ff6f00" fill-opacity="0.8" text-anchor="middle">Firebase Auth App</text>
+  <!-- Light blue background -->
+  <rect width="800" height="450" fill="url(#bg4)"/>
+
+  <!-- Browser chrome -->
+  <rect x="60" y="30" width="680" height="390" rx="12" fill="white" filter="drop-shadow(0 8px 24px rgba(37,99,235,0.15))"/>
+  <!-- Browser top bar -->
+  <rect x="60" y="30" width="680" height="44" rx="12" fill="#1e293b"/>
+  <rect x="60" y="54" width="680" height="20" fill="#1e293b"/>
+  <!-- Traffic lights -->
+  <circle cx="92"  cy="52" r="7" fill="#ef4444"/>
+  <circle cx="114" cy="52" r="7" fill="#f59e0b"/>
+  <circle cx="136" cy="52" r="7" fill="#22c55e"/>
+  <!-- URL bar -->
+  <rect x="160" y="42" width="380" height="22" rx="11" fill="#334155"/>
+  <text x="350" y="57" font-family="monospace" font-size="11" fill="#94a3b8" text-anchor="middle">nikunchauhan.github.io/portfolio</text>
+  <!-- Reload icon -->
+  <text x="155" y="58" font-family="monospace" font-size="13" fill="#64748b" text-anchor="middle">⟳</text>
+
+  <!-- Hero strip inside browser -->
+  <rect x="60" y="74" width="680" height="120" fill="url(#blueGrad)"/>
+  <!-- Blob shape -->
+  <ellipse cx="620" cy="120" rx="80" ry="70" fill="white" fill-opacity="0.08"/>
+  <ellipse cx="600" cy="110" rx="55" ry="55" fill="white" fill-opacity="0.08"/>
+  <!-- Profile circle placeholder -->
+  <circle cx="610" cy="118" r="42" fill="white" fill-opacity="0.15"/>
+  <circle cx="610" cy="108" r="18" fill="white" fill-opacity="0.25"/>
+  <ellipse cx="610" cy="135" rx="28" ry="16" fill="white" fill-opacity="0.2"/>
+  <!-- Hero text -->
+  <text x="100" y="110" font-family="Poppins,sans-serif" font-size="11" fill="rgba(255,255,255,0.7)">Hello, I'm</text>
+  <text x="100" y="132" font-family="Poppins,sans-serif" font-size="22" font-weight="800" fill="white">Nikun Chauhan</text>
+  <text x="100" y="152" font-family="Poppins,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)">CS Student &amp; Developer</text>
+  <!-- CTA buttons -->
+  <rect x="100" y="162" width="80" height="22" rx="11" fill="white"/>
+  <text x="140" y="177" font-family="Poppins,sans-serif" font-size="9" font-weight="700" fill="#2563eb" text-anchor="middle">Hire Me</text>
+  <rect x="192" y="162" width="110" height="22" rx="11" fill="transparent" stroke="white" stroke-width="1.5"/>
+  <text x="247" y="177" font-family="Poppins,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Download Resume</text>
+
+  <!-- Nav bar -->
+  <rect x="60" y="74" width="680" height="1" fill="rgba(255,255,255,0.2)"/>
+
+  <!-- About section strip -->
+  <rect x="60" y="194" width="680" height="80" fill="#f8fafc"/>
+  <circle cx="120" cy="234" r="26" fill="#dbeafe"/>
+  <circle cx="120" cy="224" r="10" fill="#93c5fd"/>
+  <ellipse cx="120" cy="248" rx="18" ry="10" fill="#93c5fd"/>
+  <rect x="162" y="210" width="160" height="10" rx="5" fill="#2563eb" fill-opacity="0.7"/>
+  <rect x="162" y="228" width="240" height="8" rx="4" fill="#94a3b8" fill-opacity="0.5"/>
+  <rect x="162" y="244" width="200" height="8" rx="4" fill="#94a3b8" fill-opacity="0.4"/>
+
+  <!-- Skills strip -->
+  <rect x="60" y="274" width="680" height="70" fill="white"/>
+  <rect x="80"  y="288" width="85" height="40" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="122" y="313" font-family="sans-serif" font-size="10" fill="#2563eb" text-anchor="middle">HTML5</text>
+  <rect x="178" y="288" width="85" height="40" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="220" y="313" font-family="sans-serif" font-size="10" fill="#2563eb" text-anchor="middle">CSS3</text>
+  <rect x="276" y="288" width="85" height="40" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="318" y="313" font-family="sans-serif" font-size="10" fill="#2563eb" text-anchor="middle">Python</text>
+  <rect x="374" y="288" width="85" height="40" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="416" y="313" font-family="sans-serif" font-size="10" fill="#2563eb" text-anchor="middle">React</text>
+  <rect x="472" y="288" width="85" height="40" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="514" y="313" font-family="sans-serif" font-size="10" fill="#2563eb" text-anchor="middle">Git</text>
+  <rect x="570" y="288" width="85" height="40" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="612" y="313" font-family="sans-serif" font-size="10" fill="#2563eb" text-anchor="middle">AWS</text>
+
+  <!-- Footer strip -->
+  <rect x="60" y="344" width="680" height="76" rx="0" fill="#1e293b"/>
+  <rect x="60" y="406" width="680" height="14" rx="0" fill="#0f172a"/>
+  <text x="400" y="375" font-family="Poppins,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">
+    Made with ❤ by Nikun Chauhan
+  </text>
+  <!-- Social icon circles -->
+  <circle cx="360" cy="394" r="9" fill="#334155"/>
+  <circle cx="384" cy="394" r="9" fill="#334155"/>
+  <circle cx="408" cy="394" r="9" fill="#334155"/>
+  <circle cx="432" cy="394" r="9" fill="#334155"/>
+  <text x="400" y="416" font-family="monospace" font-size="9" fill="#475569" text-anchor="middle">© 2026 Nikun Chauhan</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="442" font-family="Poppins,sans-serif" font-size="13" font-weight="600"
+        fill="#2563eb" fill-opacity="0.7" text-anchor="middle">Personal Portfolio</text>
 </svg>
